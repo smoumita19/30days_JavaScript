@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Noto+Sans+SC&display=swap');
+
+body{
+    color: black;
+    text-shadow: 0px 10px 40px rgba(255,255,255,0.5)!important;
+}
+
+.backgroundImg {
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+}
+
+/* .borderOnly {
+    padding: 1rem;
+    border-color: white!important;
+    width: auto;
+    height: 100vh;
+    
+} */
+
+.quoteGenarate {
+    background-color: black;
+    opacity: 0.5;
+    margin-top: -50%!important;
+    width: 50%;
+    height: 60vh;
+    box-shadow: 0px 50px 100px rgba(9, 77, 94, 0.9);
+    animation-name: showup ;
+    animation-duration: 0.9s;
+    /* border-color: white; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+
+}
+
+@keyframes showup {
+    0% {
+        width: 0%;
+        height: 0vh;
+        
+    }
+    100% {
+        width: 50%;
+        height: 60vh;
+    }
+}
+
+
+.heading {
+    padding: 0.5rem;
+    border-radius: 10px 10px 10px;
+    text-shadow: 2px 2px 5px rgb(36, 35, 35);
+    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    background-color: skyblue;
+    width: 50%;
+    box-shadow: 0px 5px 5px rgb(63, 62, 62) ,0px 0px 0px 10px rgb(182, 227, 245);
+}
+
+.heading h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    animation-name: lightup;
+    -webkit-animation-name: lightup;
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes lightup {
+    10% {
+        text-shadow: 1px 1px 2px white;
+    }
+    30% {
+        text-shadow: 5px 5px 2px white;
+    }
+    50% {
+        text-shadow: 1px 1px 2px white;
+    }
+    70% {
+        text-shadow: 5px 5px 2px white;
+    }
+    100% {
+        text-shadow: 1px 1px 2px white;
+    }
+   
+}
+
+.showQuote {
+    /* margin-top: 1rem; */
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    background-color: rgb(182, 227, 245);
+    width: 40%;
+    /* border-radius: 20px 0px 20px; */
+}
+
+.showAuthor {
+    padding: 0.2rem;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    background-color: rgb(182, 227, 245);
+    width: 15%;
+    /* border-radius: 20px 0px 20px; */
+
+}
+
+.genarateBtn {
+    margin: 2rem;
+
+}
+
+.genarateNextQuote {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Amatic SC', cursive;
+    border-radius: 20px 30px 20px;
+    transition: 0.8s;
+    background-color: rgb(182, 227, 245);
+    color: black;
+    width: 20%;
+}
+
+.genarateNextQuote:hover {
+    color: rgb(243, 243, 245);
+    border-color: white;
+    background-color: transparent!important;
+    border-radius: 0px;
+    transform: scale(1.2);
+}
+
+.heading , .showQuote , .showAuthor , .genarateBtn {
+
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+@keyframes fadein {
+    0%,80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
