@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Noto+Sans+SC&display=swap');
 
 body{
-    color: black;
-    text-shadow: 0px 10px 40px rgba(255,255,255,0.5)!important;
+    text-shadow: inset 0px 10px 40px rgba(129, 214, 230, 0.5)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .backgroundImg {
-    background-image: url("../images/background2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../images/background2.jpg);
+    background-repeat: no-repeat ;
     background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 100vh;
     filter: blur(8px);
     -webkit-filter: blur(8px);
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
 }
 
 /* .borderOnly {
@@ -27,16 +33,16 @@ body{
 .quoteGenarate {
     background-color: black;
     opacity: 0.5;
-    margin-top: -50%!important;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    height: 60vh;
-    box-shadow: 0px 50px 100px rgba(9, 77, 94, 0.9);
+    height: 65vh;
+    box-shadow: inset 0px 0px 50px 20px rgba(176, 228, 241, 0.9);
     animation-name: showup ;
     animation-duration: 0.9s;
-    /* border-color: white; */
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
+    z-index: 10;
 
 }
 
@@ -48,7 +54,7 @@ body{
     }
     100% {
         width: 50%;
-        height: 60vh;
+        height: 65vh;
     }
 }
 
@@ -61,12 +67,16 @@ body{
     font-family: 'Amatic SC', cursive;
     background-color: skyblue;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0px 5px 5px rgb(63, 62, 62) ,0px 0px 0px 10px rgb(182, 227, 245);
 }
 
 .heading h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bolder;
+    color: black;
     animation-name: lightup;
     -webkit-animation-name: lightup;
     animation-duration: 5s;
@@ -75,9 +85,10 @@ body{
     -webkit-animation-iteration-count: infinite;
 }
 
+
 @keyframes lightup {
     10% {
-        text-shadow: 1px 1px 2px white;
+        text-shadow: 0px 0px 2px white;
     }
     30% {
         text-shadow: 5px 5px 2px white;
@@ -95,32 +106,38 @@ body{
 }
 
 .showQuote {
-    /* margin-top: 1rem; */
-    font-size: 30px;
+    margin: 1rem;
+    padding: 0.2rem;
+    font-size: 23px;
     font-weight: bold;
+    color: black;
     font-family: 'Noto Sans SC', sans-serif;
     font-family: 'Amatic SC', cursive;
     background-color: rgb(182, 227, 245);
-    width: 40%;
-    /* border-radius: 20px 0px 20px; */
+    /* width: 40%; */
 }
 
+
 .showAuthor {
+    margin-left: 10rem;
+    margin: 2rem;
     padding: 0.2rem;
     font-weight: bold;
     font-size: 20px;
+    color: black;
     font-family: 'Noto Sans SC', sans-serif;
     font-family: 'Amatic SC', cursive;
     background-color: rgb(182, 227, 245);
-    width: 15%;
-    /* border-radius: 20px 0px 20px; */
+    width: 35%;
 
 }
+
 
 .genarateBtn {
-    margin: 2rem;
+    margin-bottom: 2rem;
 
 }
+
 
 .genarateNextQuote {
     font-weight: bold;
@@ -131,8 +148,8 @@ body{
     transition: 0.8s;
     background-color: rgb(182, 227, 245);
     color: black;
-    width: 20%;
-}
+    /* width: 20%; */
+} 
 
 .genarateNextQuote:hover {
     color: rgb(243, 243, 245);
